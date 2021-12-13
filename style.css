@@ -34,6 +34,7 @@ B4FE98
   --border-color: var(--p);
   --bg-solar: #ec96bb;
   --renderbg: #feec7a;
+  --span: #064663;
 }
 
 .dark {
@@ -49,6 +50,7 @@ B4FE98
   --border-color: var(var(--clr01));
   --bg-solar: var(--p);
   --renderbg: #00c7f6;
+  --span: #01c8f7;
 }
 
 body {
@@ -72,7 +74,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 span {
-  color: #064663;
+  color: var(--span);
   font-family: "Kaushan Script", cursive;
 }
 
@@ -166,7 +168,7 @@ span {
 }
 
 .main {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 30px;
   padding: 20px;
 }
@@ -275,7 +277,7 @@ select {
 }
 
 footer {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   background-color: #ffffff;
   padding: 20px;
@@ -451,7 +453,12 @@ button:hover::after {
     padding-top: 100px;
   }
   .a {
-    color: #090977;
+    color: #03012e;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 8.3px;
   }
 }
 
