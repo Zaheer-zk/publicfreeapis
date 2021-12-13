@@ -1,0 +1,475 @@
+/* B1FFFD
+B4FE98
+77E4D4
+998CEB */
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Kaushan+Script&family=Poppins:ital,wght@1,200&family=Smooch&display=swap");
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  --clr01: #eb92be;
+  --clr02: #ffef78;
+  --clr03: #a8e7e9;
+  --clr04: #b1fffd;
+  --clr05: #082032;
+  --clr06: #2c394b;
+  --p: #334756;
+  --y: #ff4c29;
+}
+
+/* .mainTheme {
+  --bg: var();
+  --bg-nav: linear-gradient(to right, var(), var());
+  --bg-dropdown: var();
+  --text: var();
+  --border-color: var(--)
+  --bg-solar: var();
+  
+} */
+
+.light {
+  --bg: var(--clr03);
+  --bg-nav: linear-gradient(to right, var(--clr01), var(--clr02));
+  --bg-dropdown: var(--clr04);
+  --text: var(--clr05);
+  --border-color: var(--p);
+  --bg-solar: #ec96bb;
+  --renderbg: #feec7a;
+}
+
+.dark {
+  --bg: var(--clr06);
+  --bg-nav: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  --bg-dropdown: var(--clr06);
+  --text: var(--clr02);
+  --border-color: var(var(--clr01));
+  --bg-solar: var(--p);
+  --renderbg: #00c7f6;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  color: var(--text);
+  background: var(--bg-nav);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--bg-solar);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--renderbg);
+}
+
+span {
+  color: #064663;
+  font-family: "Kaushan Script", cursive;
+}
+
+.navbar-brand {
+  font-family: "Smooch", cursive;
+  font-size: 1.5rem;
+}
+
+.navbar {
+  background-color: var(--bg-nav);
+  color: #ffffff;
+  padding: 10px;
+}
+
+.nav-item {
+  margin-right: 55px;
+}
+
+.dropdown {
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  z-index: 2;
+  background: var(--bg);
+  border-top: 2px solid white;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5rem;
+  transform: translateX(-40%);
+
+  transition: opacity 0.15s ease-out;
+}
+
+.dropdown:hover {
+  background-color: var(--randerbg);
+}
+
+.has-dropdown:focus-within .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown-item a {
+  width: 100%;
+  height: 100%;
+  size: 0.9rem;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+/* .dropdown-item a::before {
+  content: " ";
+  border: 1.5px solid white;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+
+} */
+
+.git-btn {
+  padding: 5px 10px 5px 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.git-btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: var(--bg-nav);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.main {
+  font-family: 'Poppins', sans-serif;
+  margin: 30px;
+  padding: 20px;
+}
+
+.hero {
+  width: auto;
+  height: auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.show-btn {
+  color: #ffffff;
+  display: inline;
+  font-size: 22px;
+  border-radius: 6px;
+  padding: 5px 20px 5px 20px;
+  margin: 10px;
+}
+
+.show-btn:hover {
+  color: #ffffff;
+}
+
+.desc {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.input-data {
+  margin-top: 0px;
+}
+
+select {
+  max-width: 350px;
+  margin: auto;
+}
+
+.categories {
+  font-size: 20px;
+}
+
+.apis {
+  background-color: var(--randerbg);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.fnt {
+  color: black;
+}
+
+.apibox {
+  margin: auto;
+  padding: 0px 0px 10px 0px;
+  margin-top: 15px;
+  height: auto;
+  width: 300px;
+  text-align: center;
+  box-shadow: 6px 6px 10px #464343;
+  align-items: center;
+  border-top: 4px solid var(--y);
+  border-radius: 8px;
+}
+
+.bg {
+  color: crimson;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.link {
+  background-color: var(--bg-solar);
+  color: #ffffff;
+  width: 100px;
+  font-weight: 600;
+}
+
+.link:hover {
+  color: #ffffff;
+  background-color: var(--renderbg);
+}
+
+.up-arrow {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  height: 40px;
+  width: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+.show {
+  display: inline-flex;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  font-size: 18px;
+  bottom: 0;
+  font-weight: 600;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+button,
+button::after {
+  width: 280px;
+  height: 56px;
+  font-size: 26px;
+  font-family: "Smooch", cursive;
+  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 58px;
+  box-shadow: 6px 0px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+  margin-top: 10px;
+}
+
+.scrollButton,
+.scrollButton::after {
+  width: 60px;
+  height: 30px;
+  font-size: 25px;
+  font-family: "Bebas Neue", cursive;
+  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 10px;
+  box-shadow: 6px 0px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+  margin-top: 10px;
+}
+
+button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: "ZAHEER KHAN";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+button:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    padding-left: 50px;
+  }
+  .desc {
+    font-size: 40px;
+    margin: 20px;
+  }
+  .hero {
+    width: 600px;
+    height: 400px;
+  }
+  .content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .apis {
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .apibox {
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dropdown {
+    width: 200px;
+  }
+  .dropdown-item a {
+    width: 20px;
+    height: 20px;
+    size: 0.5rem;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  .git-btn {
+    position: absolute;
+    padding-top: 100px;
+  }
+  .a {
+    color: #090977;
+  }
+}
+
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.rem:hover {
+  animation: color-rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+li.nav-item.has-dropdown::marker {
+  color: transparent;
+}
