@@ -5,7 +5,7 @@
 HTML, CSS, Bootstrap and  JavaScript
 
 ## 🚀 Demo
-You can see live demo [here](https://zaheer-zk.github.io/publicfreeapis/).
+You can see live demo [here](https://publicfreeapi.in/#).
 
 ## 🛠 API
 
